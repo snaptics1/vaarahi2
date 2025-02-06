@@ -702,3 +702,16 @@ h6,
 .d-flex.align-items-center .mb-0{
     font-size: 18px;
 }
+
+@media screen and (max-width:575px){
+    .d-flex.align-items-center.justify-content-end {
+        justify-content: flex-start !important;
+        margin-top: 20px;
+    }
+    .d-flex.align-items-center.justify-content-end {
+        justify-content: flex-start !important;
+    }
+    .d-flex.align-items-center .mb-0{
+        font-size: 14px;
+    }
+}
