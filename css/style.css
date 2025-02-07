@@ -213,7 +213,17 @@ h6,
     border: 15px solid var(--primary);
     border-radius: 3.5rem;
 }
-
+.carousel-item{
+    height: 90vh;
+}
+.project-item{
+    height: 380px;
+    width: 350px;
+}
+.project-item img{
+    height: 380px;
+    width: 350px;
+}
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
         position: relative;
@@ -229,7 +239,7 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/carousel-2.jpg) center center no-repeat;
+    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(https://cdn.corporatefinanceinstitute.com/assets/real-estate.jpeg) center center no-repeat;
     background-size: cover;
 }
 
