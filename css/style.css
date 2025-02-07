@@ -224,6 +224,12 @@ h6,
     height: 380px;
     width: 350px;
 }
+.VaaraHiLogo {
+    height: 76px;
+    width: 160px;
+    object-fit: contain;
+    background: #fff;
+}
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
         position: relative;
