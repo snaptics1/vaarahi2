@@ -386,7 +386,7 @@ h6,
 
 .service-item .service-img {
     position: absolute;
-    padding: 12px;
+    padding: 5px;
     width: 130px;
     height: 130px;
     top: -65px;
@@ -718,8 +718,86 @@ h6,
 .d-flex.align-items-center .mb-0{
     font-size: 18px;
 }
-
+.service-item .img-fluid{
+    height: 100% !important;
+    width: 100%;
+    object-fit: cover;
+}
+img.img-fluid.LandDevelopement {
+    height: 300px !important;
+}
+.btn-outline-orange{
+    border: 2px solid #ff5e14;
+}
+.btn-outline-orange:hover{
+    color: #fff;
+    background-color: #FF5E14;
+}
+.projectImage {
+    height: 390px !important;
+    object-fit: cover;
+}
+.urban4image{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.urban3image{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+.project-description .row{
+    align-items:center;
+}
+.project-item h5{
+    font-size: 16px;
+}
+.project-item .project-title{
+    justify-content: flex-start;
+}
+.project-item img{
+    height: 300px !important;
+}
+.project-item {
+    height: 300px;
+    width: 350px;
+}
+.project-item .project-title{
+    height: 80px;
+}
+.project-item .project-title::before{
+    height: 27px;
+}
 @media screen and (max-width:575px){
+    .VaarahiAboutSection .d-flex.align-items-center.mb-4{
+        flex-direction: column;
+        gap: 30px;
+
+    }
+    .btn-lg-square {
+        width: 35px;
+        height: 35px;
+        margin-right: 5px;
+    }
+    .ms-4{
+        margin: 0 !important;
+    }
+    .VaaraHiLogo {
+        height: 80px;
+        width: 170px;
+    }
+    .row.g-4 {
+        flex-direction: column;
+    }
+    .bg-light.text-center.h-100.p-5 {
+       padding: 30px 15px !important;
+    }
+    
+    .project-item h5{
+        font-size: 12px;
+        font-weight: 400;
+    }
     .d-flex.align-items-center.justify-content-end {
         justify-content: flex-start !important;
         margin-top: 20px;
@@ -729,5 +807,22 @@ h6,
     }
     .d-flex.align-items-center .mb-0{
         font-size: 14px;
+    }
+    .navbar .navbar-brand,.navbar .navbar-brand::after {
+        background: #ffffff;
+    }
+    .navbar.sticky-top {
+        padding: 0 !important;
+        height: 100px;
+    }
+    .navbar .navbar-brand {
+        padding: 0 !important;
+    }
+    .navbar .navbar-brand {
+        position: relative;
+        left: -20px !important;
+    }
+    .navbar {
+        justify-content: space-around;
     }
 }
