@@ -165,6 +165,7 @@ h6,
 
     .navbar .navbar-nav {
         border-top: 1px solid #EEEEEE;
+        background: #fff;
     }
 }
 
@@ -500,10 +501,10 @@ h6,
     transition: .5s;
 }
 
-.project-item:hover img,
+/* .project-item:hover img,
 .project-carousel .owl-item.center img {
     margin-top: -60px;
-}
+} */
 
 .project-item .project-title {
     position: absolute;
@@ -769,7 +770,50 @@ img.img-fluid.LandDevelopement {
 .project-item .project-title::before{
     height: 27px;
 }
+/* .owl-carousel .owl-item{
+    width: 300px !important;
+}
+.owl-carousel .owl-item img{
+    width: 300px !important; 
+}
+.owl-item.active {
+    width: 300px !important; 
+}
+.project-item{
+    width: 300px !important;    
+} */
+.aboutsectionImages1 {
+    height: 300px;
+    width: 400px;
+}
+.aboutsectionImages2 {
+    height: 320px;
+    width: 310px;
+}
 @media screen and (max-width:575px){
+    p.fs-5.fw-medium.text-primary.text-uppercase.animated.slideInRight,h1.display-1.text-white.mb-5.animated.slideInRight{
+        text-align: center;
+    }
+    a.btn.btn-primary.py-3.px-5.animated.slideInRight{
+        width: fit-content;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .aboutsectionImages1,.aboutsectionImages2{
+        height:200px;
+        width: 100%;
+        object-fit: cover;
+    }
+    h1.display-1.text-white.mb-5.animated.slideInRight{
+        font-size: 36px;
+    }
+    h1.display-5.mb-4 {
+        font-size: 26px;
+    }
+    /* .owl-carousel .owl-stage{
+        display: flex;
+    } */
     .VaarahiAboutSection .d-flex.align-items-center.mb-4{
         flex-direction: column;
         gap: 30px;
@@ -824,5 +868,11 @@ img.img-fluid.LandDevelopement {
     }
     .navbar {
         justify-content: space-around;
+    }
+}
+@media screen and (min-width:576px) and (max-width:991px){
+    .aboutsectionImages1,.aboutsectionImages2 {
+        height: 100%;
+        width: 100%;
     }
 }
