@@ -171,42 +171,34 @@
     <!-- About End -->
 
 
-    <!-- Facts Start -->
-    <div class="container-fluid facts my-5 p-5">
-        <div class="row g-5 justify-content-center">
-            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-certificate fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">14 </h1>
-                    <span class="fs-5 fw-semi-bold text-white">Years of Excellence</span>
-                </div>
+<!-- Facts Start -->
+<div class="container-fluid facts my-5 p-5">
+    <div class="row g-5 justify-content-center">
+        <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+            <div class="text-center border py-5 px-2">
+                <i class="fa fa-certificate fa-3x text-white mb-3"></i>
+                <h1 class="display-2 text-primary mb-0" data-target="14">0</h1>
+                <span class="fs-5 fw-semi-bold text-white">Years of Excellence</span>
             </div>
-            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">1000</h1>
-                    <span class="fs-5 fw-semi-bold text-white">Happy Clients
-                    </span>
-                </div>
+        </div>
+        <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
+            <div class="text-center border py-5 px-2">
+                <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
+                <h1 class="display-2 text-primary mb-0" data-target="1000">0</h1>
+                <span class="fs-5 fw-semi-bold text-white">Happy Clients</span>
             </div>
-            <!-- <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-users fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">957</h1>
-                    <span class="fs-5 fw-semi-bold text-white">Happy Clients</span>
-                </div>
-            </div> -->
-            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
-                <div class="text-center border p-5">
-                    <i class="fa fa-check-double fa-3x text-white mb-3"></i>
-                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">2500</h1>
-                    <span class="fs-5 fw-semi-bold text-white">Projects Delivered
-                    </span>
-                </div>
+        </div>
+        <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
+            <div class="text-center border py-5 px-2">
+                <i class="fa fa-check-double fa-3x text-white mb-3"></i>
+                <h1 class="display-2 text-primary mb-0" data-target="300000">0</h1>
+                <span class="fs-5 fw-semi-bold text-white">sft. Of projects delivered</span>
             </div>
         </div>
     </div>
-    <!-- Facts End -->
+</div>
+<!-- Facts End -->
+
 
 
     <!-- Team Start -->
@@ -379,6 +371,41 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Function to animate the counter
+            function animateCounter(element, target, duration) {
+                let start = 0;
+                let increment = target / (duration / 16); // Approx 60 frames per second
+                let counter = setInterval(() => {
+                    start += increment;
+                    if (start >= target) {
+                        start = target;
+                        clearInterval(counter);
+    
+                        // Format the number and add "+"
+                        if (target >= 100000) {
+                            element.innerText = (target / 100000) + "L+";
+                        } else {
+                            element.innerText = target + "+";
+                        }
+                    } else {
+                        element.innerText = Math.floor(start);
+                    }
+                }, 16);
+            }
+    
+            // Get all counter elements
+            var counterElements = document.querySelectorAll(".display-2.text-primary");
+    
+            // Start the animation for each counter
+            counterElements.forEach(function(counter) {
+                var target = parseInt(counter.getAttribute("data-target"));
+                animateCounter(counter, target, 2000); // 2000ms = 2 seconds
+            });
+        });
+    </script>
+    
 </body>
 
 </html>

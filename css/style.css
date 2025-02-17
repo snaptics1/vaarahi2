@@ -790,6 +790,14 @@ img.img-fluid.LandDevelopement {
     height: 320px;
     width: 310px;
 }
+.footer a{
+    color: #B0B9AE ;
+    transition: all 0.2s linear;
+}
+.footer a:hover{
+    color: #fff;
+    letter-spacing: 1px;
+}
 @media screen and (max-width:575px){
     p.fs-5.fw-medium.text-primary.text-uppercase.animated.slideInRight,h1.display-1.text-white.mb-5.animated.slideInRight{
         text-align: center;
@@ -868,6 +876,15 @@ img.img-fluid.LandDevelopement {
     }
     .navbar {
         justify-content: space-around;
+    }
+    .owl-item{
+        width:300px !important;
+    }
+    .owl-stage{
+        display: flex;
+    }
+    .text-center.mx-auto.mt-5.wow.fadeIn {
+        margin-top: 0 !important;
     }
 }
 @media screen and (min-width:576px) and (max-width:991px){

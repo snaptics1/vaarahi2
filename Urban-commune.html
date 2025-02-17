@@ -55,11 +55,26 @@
             position: relative;
             z-index: 2;
         }
-        .list-unstyled li{
-        margin-block: 7px;
+        .list-unstyled{
+            display: flex;
+            gap: 10px;
         }
-        .project-description .text-warning{
+        .list-unstyled li {
+            margin-block: 7px;
+            background: #000;
+            padding: 15px;
+            color: #fff;
+        }
+
+        .project-description .text-warning {
             padding-bottom: 10px;
+        }
+        @media screen and (max-width:992px){
+            .list-unstyled{
+            display: flex;
+           flex-wrap: wrap;
+        }
+
         }
     </style>
 </head>
@@ -79,16 +94,16 @@
             <div class="col-lg-6 ps-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center text-white">
                     <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" target="_blank" href="https://www.facebook.com/SriVaarahiInfraDeveloper/"><i class="fab fa-facebook-f"></i></a>
-                    <!-- <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                    <a class="btn btn-link text-light" target="_blank" href="https://www.instagram.com/srivaarahi3/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-link text-light" target="_blank"
+                        href="https://www.facebook.com/SriVaarahiInfraDeveloper/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" target="_blank" href="https://www.instagram.com/srivaarahi3/"><i
+                            class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div class="col-lg-6 text-end">
                 <div class="h-100 topbar-right d-inline-flex align-items-center text-white  py-2 px-5">
                     <span class="fs-5 fw-bold me-2 "><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
-<span class="fs-5 fw-bold">
+                    <span class="fs-5 fw-bold">
                         <a class="text-white" target="_blank" href="tel:+919573382014">+91 95733 82014</a>
                     </span>
 
@@ -123,11 +138,12 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn " data-wow-delay="0.1s" style="background: rgb(2, 2, 71);">
+    <div class="container-fluid page-header py-5 wow fadeIn " data-wow-delay="0.1s"
+    style="background: rgba(0, 0, 0, 0.7) center/cover no-repeat url(/img/urban2.png);">
         <div class="container py-5 text-center">
-            <h1 class="display-3  animated slideInRight text-white" style="text-transform: uppercase;">Urban Commune
+            <h1 class="display-3  animated slideInRight text-white" style="text-transform: uppercase;background-color: rgba(35, 45, 110, 0.7); width: fit-content;margin: auto; padding: 10px;font-weight: 600;margin-bottom: 10px;">Urban Commune
             </h1>
-            <p class="breadcrumb-item active " aria-current="page">A  Serene Open Plots Community Amidst Nature</p>
+            <p class="breadcrumb-item active " aria-current="page" style="background-color: rgba(35, 45, 110, 0.7); width: fit-content;margin: auto; padding: 10px;font-weight: 600;">A Serene Open Plots Community Amidst Nature</p>
         </div>
     </div>
     <!-- Page Header End -->
@@ -149,17 +165,23 @@
             </div>
 
             <div class="row mt-4">
-                <div class="col-lg-6 p-4">
+                <div class="col-lg-6">
                     <h3 class="fw-bold text-warning">Project Highlights</h3>
                     <ul class="list-unstyled">
-                        <li><i class="bi bi-check-circle-fill  me-2"></i>100-acre DTCP-approved gated community</li>
-                        <li><i class="bi bi-check-circle-fill  me-2"></i> Spacious & well-planned open plots</li>
-                        <li><i class="bi bi-check-circle-fill  me-2"></i> Pollution-free, nature-friendly environment
-                        </li>
-                        <li><i class="bi bi-check-circle-fill  me-2"></i>Well-connected to major highways and cities
-                        </li>
-                        <li><i class="bi bi-check-circle-fill  me-2"></i> Future-ready investment with high appreciation
-                            potential</li>
+                        <div>
+                            <li><i class="bi bi-check-circle-fill  me-2"></i>100-acre DTCP-approved gated community</li>
+                            <li><i class="bi bi-check-circle-fill  me-2"></i> Spacious & well-planned open plots</li>
+                            <li><i class="bi bi-check-circle-fill  me-2"></i> Pollution-free, nature-friendly
+                                environment
+                            </li>
+                        </div>
+                        <div>
+                            <li><i class="bi bi-check-circle-fill  me-2"></i>Well-connected to major highways and cities
+                            </li>
+                            <li><i class="bi bi-check-circle-fill  me-2"></i> Future-ready investment with high
+                                appreciation
+                                potential</li>
+                        </div>
                     </ul>
                 </div>
                 <div class="col-lg-6">
@@ -176,17 +198,21 @@
                         <strong>sustainable and peaceful living</strong>, the project includes:
                     </p>
                     <ul class="list-unstyled">
-                        <li><i class="bi bi-check-circle-fill  me-2"></i>Landscaped open spaces & tree-lined avenues
-                        </li>
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Jogging & reflexology walking tracks for
-                            wellness</li>
-                        <li><i class="bi bi-check-circle-fill me-2"></i> Children’s play area for fun and safety
-                        </li>
+                        <div>
+                            <li><i class="bi bi-check-circle-fill  me-2"></i>Landscaped open spaces & tree-lined avenues
+                            </li>
+                            <li><i class="bi bi-check-circle-fill me-2"></i>Jogging & reflexology walking tracks for
+                                wellness</li>
+                            <li><i class="bi bi-check-circle-fill me-2"></i> Children’s play area for fun and safety
+                            </li>
+                        </div>
+                       <div>
                         <li><i class="bi bi-check-circle-fill me-2"></i> Community clubhouse with leisure facilities
                         </li>
                         <li><i class="bi bi-check-circle-fill me-2"></i> Eco-friendly infrastructure with green belt
                             areas
                         </li>
+                       </div>
                     </ul>
                 </div>
                 <div class="col-lg-6 order-lg-1">
@@ -195,32 +221,29 @@
             </div>
 
             <div class="row mt-5">
-                <div class="col-lg-6 p-4">
+                <div class="col-lg-6">
                     <h3 class="fw-bold text-warning">Investment Potential & Future Growth</h3>
                     <p>Urban Commune is located in an area with huge investment potential, making it an ideal choice for
                         those looking to buy land for future development.
                     </p>
                     <ul class="list-unstyled">
-                        <li><i class="bi bi-check-circle-fill me-2"></i> Excellent road connectivity to Hyderabad &
-                            nearby towns</li>
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Fast-growing real estate corridor with high
-                            appreciation value
-                        </li>
-                        <li><i class="bi bi-check-circle-fill me-2"></i>Ideal for both long-term investment & immediate
-                            construction</li>
+                        <div>
+                            <li><i class="bi bi-check-circle-fill me-2"></i> Excellent road connectivity to Hyderabad &
+                                nearby towns</li>
+                            <li><i class="bi bi-check-circle-fill me-2"></i>Fast-growing real estate corridor with high
+                                appreciation value
+                            </li>
+                        </div>
+                        <div>
+                            <li><i class="bi bi-check-circle-fill me-2"></i>Ideal for both long-term investment & immediate
+                                construction</li>
+                        </div>
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <img src="./img/urban3.png" alt="Investment Benefits" class="img-fluid rounded shadow urban3image">
                 </div>
             </div>
-
-            <!-- <div class="row mt-5 text-center">
-            <div class="col">
-              <h3 class="fw-bold">Secure Your Dream Plot Today!</h3>
-              <a href="#contact" class="btn btn-lg btn-warning text-uppercase fw-bold px-4 mt-3">Get In Touch</a>
-            </div>
-          </div> -->
             <div class="text-center py-5 mt-5">
                 <p>Whether you're looking to build a dream home in a peaceful environment or secure a high-value
                     investment, Urban Commune offers an unbeatable opportunity in Hyderabad’s expanding real estate
@@ -231,6 +254,67 @@
     </section>
 
 
+    <!-- Project Start -->
+
+    <div class="container-fluid bg-dark pb-5 pt-4 px-0">
+        <div class="text-center mx-auto mt-5 wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+            <!-- <p class="fw-medium text-uppercase text-primary mb-2">Our Projects</p> -->
+            <h1 class="display-5 text-white mb-5">Project Gallery</h1>
+        </div>
+        <div class="owl-carousel project-carousel wow fadeIn" data-wow-delay="0.1s">
+
+
+            <a class="project-item" href="">
+                <img class="img-fluid" src="./img/urban3.png" alt="">
+                <div class="project-title d-none">
+                    <h5 class="text-primary mb-0"> Farmland & Open Plot Ventures</h5>
+                </div>
+            </a>
+            <a class="project-item" href="">
+                <img class="img-fluid" src="./img/urban4.png" alt="">
+                <div class="project-title d-none">
+                    <h5 class="text-primary mb-0">Commercial Office Spaces</h5>
+                </div>
+            </a>
+            <a class="project-item" href="">
+                <img class="img-fluid" src="./img/urban1.png" alt="">
+                <div class="project-title d-none">
+                    <h5 class="text-primary mb-0">Premium Gated Communities</h5>
+                </div>
+            </a>
+            <a class="project-item" href="">
+                <img class="img-fluid" src="./img/urban6 (1).png" alt="">
+                <div class="project-title d-none">
+                    <h5 class="text-primary mb-0"> Independent Villas & Duplex Homes</h5>
+                </div>
+            </a>
+            <a class="project-item" href="">
+                <img class="img-fluid" src="./img/urban2.png" alt="">
+                <div class="project-title d-none">
+                    <h5 class="text-primary mb-0">Luxury Residential Apartments</h5>
+                </div>
+            </a>
+            <a class="project-item" href="">
+                <img class="img-fluid" src="./img/urban6 (4).png" alt="">
+                <div class="project-title d-none">
+                    <h5 class="text-primary mb-0">Township & Land Development</h5>
+                </div>
+            </a>
+            <a class="project-item" href="">
+                <img class="img-fluid" src="./img/urban6 (5).png" alt="">
+                <div class="project-title d-none">
+                    <h5 class="text-primary mb-0">Township & Land Development</h5>
+                </div>
+            </a>
+            <a class="project-item" href="">
+                <img class="img-fluid" src="./img/urban6 (6).png" alt="">
+                <div class="project-title d-none">
+                    <h5 class="text-primary mb-0">Township & Land Development</h5>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Project End -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
@@ -240,17 +324,17 @@
                     <h5 class=" mb-4 text-white">Our Office</h5>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Sri Vaarahi Infra Developers Plot No. 77,
                         Gate No. 4, Opposite : Park, Mathru Srinagar, Miyapur, Hyderabad – 500 049​.</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a target="_blank" href="tel:+919573382014">+919573382014</a> </p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a target="_blank" href="mailto:srivaarahiinfradevelopers@gmail.com">srivaarahiinfradevelopers@gmail.com</a> </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a target="_blank"
+                            href="tel:+919573382014">+919573382014</a> </p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a target="_blank"
+                            href="mailto:srivaarahiinfradevelopers@gmail.com">srivaarahiinfradevelopers@gmail.com</a>
+                    </p>
                     <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-primary rounded-circle me-2" target="_blank" href="https://www.instagram.com/srivaarahi3/"><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" target="_blank" href="https://www.facebook.com/SriVaarahiInfraDeveloper/"><i
+                        <a class="btn btn-square btn-primary rounded-circle me-2" target="_blank"
+                            href="https://www.instagram.com/srivaarahi3/"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" target="_blank"
+                            href="https://www.facebook.com/SriVaarahiInfraDeveloper/"><i
                                 class="fab fa-facebook-f"></i></a>
-                        <!-- <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -260,15 +344,6 @@
                     <a class="btn btn-link" href="contact.html">Contact Us</a>
                     <a class="btn btn-link" href="project.html">Projects</a>
                 </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h5 class=" mb-4">Business Hours</h5>
-                    <p class="mb-1">Monday - Friday</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6>
-                </div> -->
                 <div class="col-lg-4 col-md-6">
                     <h5 class=" mb-4 text-white">Stay Updated with Vaarahi</h5>
                     <p>Subscribe to our newsletter and get the latest updates on new projects, offers, and real estate
