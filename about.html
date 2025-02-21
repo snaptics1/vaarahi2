@@ -29,6 +29,79 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Section Title Styling */
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #ffffff;
+            position: relative;
+            display: inline-block;
+        }
+    
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #007bff;
+            margin: 10px auto 0;
+        }
+    
+        /* Mission and Vision Text Styling */
+        .mission-text, .vision-text {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align:justify;
+            width: 90%;
+        }
+    
+        /* Core Values Card Styling */
+        .core-value-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    
+        .core-value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.15);
+        }
+    
+        .core-value-card h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-top: 20px;
+        }
+    
+        .core-value-card p {
+            font-size: 0.95rem;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+    
+        /* Icon Styling */
+        .icon {
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        @media screen and (max-width:768px){
+            .mission-text, .vision-text {
+                text-align: justify;
+                font-size: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -293,7 +366,80 @@
         </div>
     </div>
     <!-- Video Modal End -->
-        
+<!-- Mission and Vision section starts here -->
+<div style="background-color: #031e49; padding: 80px 0;">
+    <div class="container-lg">
+        <!-- Mission Section -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Mission</h2>
+                    <p class="mission-text">At Vaarahi Developers, we don’t just develop land—we create opportunities. Whether it’s premium plots, commercial spaces, or investment-driven developments, our mission is to transform landscapes into high-value assets. We are committed to delivering strategically located, legally secure, and future-ready properties that empower our customers to build their dreams with confidence.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                  <!-- Vision Section -->
+                  <div class="text-center mb-5">
+                    <h2 class="section-title">Vision</h2>
+                    <p class="vision-text">To be a trusted name in real estate development, setting new benchmarks in transparency, quality, and investment value. We envision a future where every project we undertake enhances growth, prosperity, and long-term returns—whether for homeowners, businesses, or investors.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Core Values Section -->
+        <div class="text-center mb-5">
+            <h2 class="section-title">Core Values</h2>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Trust & Integrity -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4 text-center core-value-card">
+                    <i class="fas fa-handshake icon"></i>
+                    <h4 class="mt-3">Trust & Integrity</h4>
+                    <p>We operate with complete transparency, ensuring every project is legally clear and investment-worthy.</p>
+                </div>
+            </div>
+
+            <!-- Customer-Centric Approach -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4 text-center core-value-card">
+                    <i class="fas fa-users icon"></i>
+                    <h4 class="mt-3">Customer-Centric Approach</h4>
+                    <p>Your goals drive our vision. We prioritize your needs and ensure secure, informed decisions.</p>
+                </div>
+            </div>
+
+            <!-- Strategic Growth -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4 text-center core-value-card">
+                    <i class="fas fa-chart-line icon"></i>
+                    <h4 class="mt-3">Strategic Growth</h4>
+                    <p>We choose high-potential locations, offering the best connectivity and future-proof value.</p>
+                </div>
+            </div>
+
+            <!-- Quality & Commitment -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4 text-center core-value-card">
+                    <i class="fas fa-check-circle icon"></i>
+                    <h4 class="mt-3">Quality & Commitment</h4>
+                    <p>We uphold strict quality standards, ensuring a hassle-free and rewarding investment.</p>
+                </div>
+            </div>
+
+            <!-- Sustainability -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card p-4 text-center core-value-card">
+                    <i class="fas fa-leaf icon"></i>
+                    <h4 class="mt-3">Sustainability</h4>
+                    <p>Our developments integrate green landscapes and smart infrastructure for long-term value.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mission and Vision section ends here -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
